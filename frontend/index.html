@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Promiedos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark">
+  <div class="layout">
+    <aside class="sidebar">
+      <h1>Mi Promiedos</h1>
+      <nav>
+        <button data-view="liga">Liga Profesional</button>
+        <button data-view="apertura">Apertura</button>
+        <button data-view="clausura">Clausura</button>
+        <button data-view="copa">Copa Argentina</button>
+      </nav>
+      <input id="teamSearch" placeholder="Buscar equipo..." />
+      <button id="toggleTheme">Modo oscuro/claro</button>
+      <button id="reset">Resetear torneo</button>
+    </aside>
+    <main class="content">
+      <section id="standings"></section>
+      <section id="fixtures"></section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

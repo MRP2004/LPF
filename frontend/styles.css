@@ -1,0 +1,11 @@
+:root { --bg:#0e1411; --panel:#17231d; --accent:#2ec866; --text:#e6f2e9; }
+body { margin:0; font-family:Arial,sans-serif; background:var(--bg); color:var(--text); }
+.layout { display:grid; grid-template-columns:260px 1fr; min-height:100vh; }
+.sidebar { background:#101a14; padding:1rem; border-right:1px solid #223329; }
+.sidebar button, .sidebar input { width:100%; margin:.35rem 0; padding:.55rem; border-radius:6px; border:1px solid #2b4234; background:#1b2a22; color:var(--text); }
+.content { padding:1rem; }
+.table { width:100%; border-collapse:collapse; font-size:.9rem; }
+.table th,.table td { padding:.4rem .5rem; border-bottom:1px solid #2a4032; text-align:center; }
+.table th:first-child,.table td:first-child,.table th:nth-child(2),.table td:nth-child(2){ text-align:left; }
+.match { background:var(--panel); margin:.5rem 0; padding:.7rem; border-left:3px solid var(--accent); border-radius:6px; }
+@media (max-width: 900px){ .layout{ grid-template-columns:1fr; } .sidebar{ position:sticky; top:0; z-index:2; } }
